@@ -1,0 +1,34 @@
+{
+  "name": "minimalist-serverless-starter",
+  "version": "1.0.0",
+  "description": "Opinionated minimalist realist serverless starter",
+  "author": "Mikael Vesavuori",
+  "license": "MIT",
+  "keywords": [
+    "serverless",
+    "template",
+    "boilerplate",
+    "starter"
+  ],
+  "scripts": {
+    "start": "npx sls offline --reloadHandler",
+    "build": "npx sls package",
+    "deploy": "npx sls deploy",
+    "teardown": "npx sls remove"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8",
+    "@types/node": "18",
+    "@typescript-eslint/eslint-plugin": "5",
+    "@typescript-eslint/parser": "5",
+    "eslint": "8",
+    "eslint-config-prettier": "8",
+    "eslint-plugin-prettier": "4",
+    "prettier": "2",
+    "serverless": "3",
+    "serverless-esbuild": "1",
+    "serverless-iam-roles-per-function": "3",
+    "serverless-offline": "12",
+    "typescript": "4"
+  }
+}
