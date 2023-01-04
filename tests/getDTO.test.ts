@@ -5,7 +5,7 @@ import { getDTO } from '../src/index';
 test.serial('It should get a provided name from a well-defined object', (t) => {
   const expected = 'Jeremiah';
 
-  const response = getDTO({ body: { name: expected } });
+  const response = getDTO({ name: expected });
 
   t.is(response, expected);
 });

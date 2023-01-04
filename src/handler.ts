@@ -8,7 +8,10 @@ export const handler = async (event: APIGatewayEvent, context: Context) => {
   console.log('Event', event);
   console.log('Context', context);
 
-  const input = getDTO(event);
+  const body: Record<string, any> =
+    event.body && typeof event.body === 'string' ? JSON.parse(event.body) : event.body;
+
+  const input = getDTO(body);
   const result = myUsecase(input);
 
   return {

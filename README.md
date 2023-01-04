@@ -27,3 +27,17 @@ Clone, fork, or download the repo as you normally would. Run `npm install`.
 - `npm run build`: Package application with Serverless Framework
 - `npm run deploy`: Deploy application to AWS with Serverless Framework
 - `npm run teardown`: Remove stack from AWS
+
+## Running locally
+
+Using `npm start` you can start using the local endpoint `http://localhost:3000/dev/greet` to call the service.
+
+```bash
+curl http://localhost:3000/dev/greet -X POST -d '{ "name": "Zelda, Princess of Hyrule" }'
+```
+
+Which should respond back with:
+
+```bash
+"Hi Zelda, Princess of Hyrule!"
+```

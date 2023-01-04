@@ -38,6 +38,6 @@ functions:
     description: Greeting demo
     events:
       - http:
-          method: GET
+          method: POST
           path: /greet
           cors: true

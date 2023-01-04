@@ -9,7 +9,7 @@ docs/
 coverage/
 jest-coverage/
 .webpack/
-./esbuild/
+.esbuild/
 .serverless/
 
 # Diagrams

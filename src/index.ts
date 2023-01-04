@@ -1,8 +1,8 @@
 /**
  * @description Retrieves the expected input in a well-defined shape.
  */
-export function getDTO(event: Record<string, any>): InputDTO {
-  return event?.body?.name || '';
+export function getDTO(body: Record<string, any>): InputDTO {
+  return body.name || '';
 }
 
 /**
