@@ -33,11 +33,11 @@ package:
     - node_modules/aws-lambda/**
 
 functions:
-  DemoFunction:
-    handler: src/index.handler
-    description: Do something for a demo
+  Greeter:
+    handler: src/handler.handler
+    description: Greeting demo
     events:
       - http:
           method: GET
-          path: /demo
+          path: /greet
           cors: true
