@@ -28,9 +28,6 @@ plugins:
 
 package:
   individually: true
-  patterns:
-    - node_modules/aws-sdk/**
-    - node_modules/aws-lambda/**
 
 functions:
   Greeter:
